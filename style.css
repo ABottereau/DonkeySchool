@@ -6,6 +6,64 @@ img {
 img:hover {
     opacity: 0.7;
 }
+
 #etudes article img {
     filter: grayscale(1);
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+#ul-deroulant {
+    list-style-type: none;
+}
+
+.deroulant {
+    float: left;
+    width: 25%;
+    text-align: left;
+    position: relative;
+}
+
+#ul-deroulant::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sous {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
 }

@@ -201,6 +201,13 @@ textarea {
 }
 .img {
     width: 100%;
+    max-width: max-content;
+    max-height: 240px;
+}
+.img2 {
+    width: 100%;
+    max-width: max-content;
+    max-height: 300px;
 }
 .img-height {
     height:max-content;
@@ -208,4 +215,64 @@ textarea {
 .img-box2 {
     height: 300px;
     max-width: 100%;
+}
+#articles {
+    border-color: black;
+    border-bottom: 2px solid;
+    padding-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    .article-disposition {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-content-disposition {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .img-box {
+        width: 35%;
+    }
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .subject {
+        margin-top: 0;
+    }
+    .article-disposition2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-content-disposition2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .img-box2 {
+        width: 35%;
+    }
+    .text-box2 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    #image-gd {
+        height: auto;
+        width: 100%;
+    }
+    .form {
+        margin-left: 0%;
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
 }

@@ -221,6 +221,12 @@ textarea {
     border-bottom: 2px solid;
     padding-bottom: 1em;
 }
+footer p {
+    text-align: center;
+    border-color: black;
+    border-top: 2px solid;
+}
+
 
 @media (max-width: 600px) {
     .article-disposition {
